@@ -6,11 +6,11 @@
         list-style: none;
         box-sizing: border-box;
     }
-
+    
     header {
         background: #f1f1f1;
     }
-
+    
     .inner-width {
         max-width: 80%;
         display: flex;
@@ -19,7 +19,7 @@
         padding: 14px 20px;
         margin: auto;
     }
-
+    
     .menu-icon {
         width: 50px;
         height: 50px;
@@ -33,12 +33,12 @@
         cursor: pointer;
         transition: .2s linear;
     }
-
+    
     .menu-icon:hover {
         opacity: 0.9;
         transition: scale(1.1);
     }
-
+    
     .navigation-menu {
         position: fixed;
         width: 100%;
@@ -51,16 +51,16 @@
         justify-content: center;
         transition: .6s;
     }
-
+    
     .navigation-menu nav {
         display: grid;
     }
-
+    
     .navigation-menu li {
         margin: 20px 0;
         overflow: hidden;
     }
-
+    
     .navigation-menu a {
         color: #fff;
         font-size: 40px;
@@ -69,7 +69,7 @@
         display: inline-block;
         transform: translateY(40px);
     }
-
+    
     .navigation-menu a::before {
         content: "";
         position: absolute;
@@ -82,11 +82,11 @@
         z-index: -1;
         transition: .2s linear;
     }
-
+    
     .navigation-menu a:hover::before {
         width: 100%;
     }
-
+    
     p {
         max-width: 80%;
         margin: auto;
@@ -95,42 +95,42 @@
         line-height: 1.4em;
         text-align: justify;
     }
-
+    
     .menu-icon.active {
         background: #f1f1f1;
         color: #2c3a47;
     }
-
+    
     .navigation-menu.active {
         right: 0;
         z-index: 1;
     }
-
+    
     .navigation-menu.active a {
         transform: translateY(0);
         transition: .6s linear;
     }
-
+    
     .navigation-menu.active li:nth-child(1) a {
         transition-delay: .2s;
     }
-
+    
     .navigation-menu.active li:nth-child(2) a {
         transition-delay: .4s;
     }
-
+    
     .navigation-menu.active li:nth-child(3) a {
         transition-delay: .6s;
     }
-
+    
     .navigation-menu.active li:nth-child(4) a {
         transition-delay: .8s;
     }
-
+    
     .navigation-menu.active li:nth-child(5) a {
         transition-delay: 1s;
     }
-
+    
     #home {
         height: 100vh;
         min-height: 500px;
@@ -138,7 +138,7 @@
         background-size: cover;
         background-attachment: fixed;
     }
-
+    
     #home .home-content h1 {
         margin-bottom: 50%;
         padding-top: 15%;
@@ -148,12 +148,12 @@
         margin-bottom: 60px;
         color: #f1f1f1;
     }
-
+    
     #home .home-content h1::after {
         content: " Epic";
         animation: textanim 9s linear infinite;
     }
-
+    
     @keyframes textanim {
         25% {
             content: " A Developer";
@@ -165,10 +165,10 @@
             content: " Self-taught";
         }
     }
-
+    
     #home .home-content h2 {
         padding: 1%;
-        margin-left: 10%;
+        margin-left: 15%;
         font-size: 55px;
         text-align: center;
         margin-right: 10%;
@@ -176,18 +176,18 @@
         position: relative;
         transform: translateY(40px);
     }
-
+    
     #home .home-content h2:hover::before {
         width: 80%;
     }
-
+    
     #home .home-content h2::before {
         content: "";
         position: absolute;
         width: 0%;
         height: 15px;
         margin-left: 10%;
-        background-color: #e97200;
+        background-color: #2c3a47;
         bottom: 0;
         left: 0;
         border-radius: 15px;
@@ -195,7 +195,7 @@
         transition: .2s linear;
         transform: translateY(10px);
     }
-
+    
     #home .home-content .icon-bar {
         margin-left: 25%;
         margin-top: 5%;
@@ -206,7 +206,7 @@
         overflow: auto;
         /* Overflow due to float */
     }
-
+    
     #home .home-content .icon-bar a {
         margin: 9%;
         width: 100px;
@@ -221,33 +221,33 @@
         cursor: pointer;
         transition: .2s linear;
     }
-
+    
     #home .home-content .icon-bar a:hover {
         background-color: #2c3a47;
         opacity: 0.8;
         transition: scale(1.1);
         /* Add a hover color */
     }
-
+    
     #home .home-content .active {
         background-color: #444;
         /* Add an active/current color */
     }
-
+    
     #home .about-me {
         background-color: #2c3a47;
         width: 70%;
         margin-top: auto;
         margin-left: 15%;
     }
-
+    
     #home .about-me p {
         margin-top: 1em;
         color: #f1f1f1;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.7em;
     }
-
+    
     #home .about-me a {
         color: #a6a6a6;
         font-family: 'Montserrat', sans-serif;
