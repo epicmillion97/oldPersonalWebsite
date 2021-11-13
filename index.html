@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="inner-width">
+            <h1>Menu</h1>
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation-menu">
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+        </nav>
+    </div>
+    <!-- Home Page -->
+    <section id="home">
+        <div class="home-content">
+
+            <h1>I am</h1>
+
+            <h2>Self-taught software and engineering student</h2>
+
+            <div class="icon-bar">
+                <a class="active" href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam"></i></a>
+                <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://github.com/epicmillion97" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://pcpartpicker.com/b/H2x6Mp" target="_blank"><i class="fas fa-desktop"></i></a>
+            </div>
+
+            <div class="about-me">
+                <p>I am a professional. 4 years of <a href="https://www.w3schools.com/html/" target="_blank">html</a> and <a href="https://www.w3schools.com/css/" target="_blank">css</a> coding. 1 year of <a href="https://www.w3schools.com/python/" target="_blank">python</a>. Learning <a href="https://www.w3schools.com/js/" target="_blank">javascript</a> and <a href="https://www.w3schools.com/cpp/" target="_blank">C+</a>.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        $(".menu-icon").click(function() {
+            $(this).toggleClass("active");
+            $(".navigation-menu").toggleClass("active");
+            $(".menu-icon i").toggleClass("fa-times");
+        });
+    </script>
+
+</body>
+
+</html>
