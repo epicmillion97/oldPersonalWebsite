@@ -134,7 +134,7 @@
     #home {
         height: 100vh;
         min-height: 500px;
-        background: url(/images/mountain.jfif);
+        background: url(/oldPersonalWebsite/images/mountain.jfif);
         background-size: cover;
         background-attachment: fixed;
     }
